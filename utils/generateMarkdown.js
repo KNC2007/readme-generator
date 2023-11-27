@@ -1,10 +1,42 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { }
+function renderLicenseBadge(license) {
+  if (license == 'Apache License 2.0') {
+    return '[![License: Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+  } 
+  if (license == 'BSD 3-Clause') {
+    return '[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
+  }
+  if (license == 'GNU General Public License v3.0') {
+    return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+  }
+  if (license == 'MIT License') {
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+  }
+  else {
+    return ''
+  }
+ }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) {
+  if (license == 'Apache License 2.0') {
+    return '(https://choosealicense.com/licenses/apache-2.0/)'
+  } 
+  if (license == 'BSD 3-Clause') {
+    return '(https://choosealicense.com/licenses/bsd-3-clause/)'
+  }
+  if (license == 'GNU General Public License v3.0') {
+    return '(https://choosealicense.com/licenses/gpl-3.0/)'
+  }
+  if (license == 'MIT License') {
+    return '(https://choosealicense.com/licenses/mit/)'
+  }
+  else {
+    return ''
+  }
+ }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -19,7 +51,7 @@ function generateMarkdown(data) {
   ${data.descriptionAns}
   
   ## License Badge
-  ${data.licenseAns}
+  ${renderLicenseBadge(data.licenseAns)}
 
   ## Table of Contents
   1. [Installation](#installation)
@@ -36,8 +68,8 @@ function generateMarkdown(data) {
   ${data.usageAns} 
 
   ## License
-  License used for this project is ${data.licenseAns}.
-  * For more information on license types, please reference this website [https://choosealicense.com/](https://choosealicense.com/).
+  License used for this project is the ${data.licenseAns}.
+  * For more information about this license, click here: ${renderLicenseLink(data.licenseAns)}.
 
   ## Contributing 
   ${data.contributionAns}
