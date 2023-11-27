@@ -22,12 +22,12 @@ function generateMarkdown(data) {
   ${data.licenseAns}
 
   ## Table of Contents
-  1. [Installation] (#Installation)
-  2. [Usage] (#Usage%20Information)
-  3. [License] (#License)
-  4. [Contributing] (#Test%20Instructions)
-  5. [Tests] (#Test%20Instructions)
-  6. [Questions] (#Questions)
+  1. [Installation](#installation)
+  2. [Usage](#usage-information)
+  3. [License](#license)
+  4. [Contributing](#contributing)
+  5. [Tests](#test-instructions)
+  6. [Questions](#questions)
 
   ## Installation
   ${data.installationAns}
@@ -37,7 +37,7 @@ function generateMarkdown(data) {
 
   ## License
   License used for this project is ${data.licenseAns}.
-  * For more information on license types, please reference this website [https: //choosealicense.com/](https://choosealicense.com/).
+  * For more information on license types, please reference this website [https://choosealicense.com/](https://choosealicense.com/).
 
   ## Contributing 
   ${data.contributionAns}
@@ -47,8 +47,8 @@ function generateMarkdown(data) {
 
   ## Questions
   * GitHub Username: ${data.gitHubUsernameAns}
-  * [Click here to access me GitHub Profile] (${data.gitHubProfileLink})
-  * To reach me for additional question, please email me at: ${data.emailAns}
+  * Click here to access my GitHub Profile: (https://github.com/${data.gitHubUsernameAns})
+  * To reach me for additional question, please email me at: [${data.emailAns}](mailto:${data.emailAns})
 `;
 }
 
