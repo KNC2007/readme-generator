@@ -22,16 +22,16 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license == 'Apache License 2.0') {
-    return '(https://choosealicense.com/licenses/apache-2.0/)'
+    return 'https://choosealicense.com/licenses/apache-2.0/'
   } 
   if (license == 'BSD 3-Clause') {
-    return '(https://choosealicense.com/licenses/bsd-3-clause/)'
+    return 'https://choosealicense.com/licenses/bsd-3-clause/'
   }
   if (license == 'GNU General Public License v3.0') {
-    return '(https://choosealicense.com/licenses/gpl-3.0/)'
+    return 'https://choosealicense.com/licenses/gpl-3.0/'
   }
   if (license == 'MIT License') {
-    return '(https://choosealicense.com/licenses/mit/)'
+    return 'https://choosealicense.com/licenses/mit/'
   }
   else {
     return ''
@@ -82,7 +82,7 @@ function generateMarkdown(data) {
 
   ## Questions
   * GitHub Username: ${data.gitHubUsernameAns}
-  * Click here to access my GitHub Profile: (https://github.com/${data.gitHubUsernameAns})
+  * Click here to access my GitHub Profile: https://github.com/${data.gitHubUsernameAns}
   * To reach me for additional questions, please email me at: [${data.emailAns}](mailto:${data.emailAns})
 `;
 }

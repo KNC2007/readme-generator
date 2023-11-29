@@ -20,23 +20,22 @@
     
   ![Run node index in terminal and questions view.](./assets/readme%20terminal%20screenshot.png)
 
-  Link to walkthrough video: 
-
+  Link to walkthrough video: https://watch.screencastify.com/v/w6uwpyBusK34kENTUy5I
 
   ## License
   This project is licensed under the MIT License license.
-  * For more information about this license, click here: (https://choosealicense.com/licenses/mit/).
+  * For more information about this license, click here: https://choosealicense.com/licenses/mit/.
 
   ## Contributing 
   Resources used:
-  * (https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-  * (https://choosealicense.com/)
-  * (https://shields.io/)
+  * https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+  * https://choosealicense.com/
+  * https://shields.io/
 
   ## Test Instructions
   N/A 
 
   ## Questions
   * GitHub Username: KNC2007
-  * Click here to access my GitHub Profile: (https://github.com/knc2007)
+  * Click here to access my GitHub Profile: https://github.com/knc2007
   * To reach me for additional questions, please email me at: [cnkalbach@gmail.com](mailto:cnkalbach@gmail.com)
